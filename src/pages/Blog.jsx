@@ -12,7 +12,6 @@ import img9 from '../assets/9.png';
 import img10 from '../assets/10.png';
 import v2 from '../assets/flooded-ruins.1920x1080.mp4';
 import background from '../assets/flooded-ruins.1920x1080.mp4'; 
-import valencia from '../assets/valencia.jpg';
 import hurricane from '../assets/huricane.png';
 import oil from '../assets/oil.png';
 import PropTypes from 'prop-types';
@@ -48,7 +47,6 @@ function Item({ img, isAnimating, selectedImage }) {
                       the beach promenade, taking advantage of the pleasant weather conditions.
                     </p>
                   </div>
-                <img src={valencia} alt="Valencia" className="content-image" />
               </div>
             </div>
           </div>
@@ -328,8 +326,14 @@ function Blog() {
       <video autoPlay muted loop id="background-video">
         <source src={v2} type="video/mp4" />
         Your browser does not support the video tag.
+      
       </video>
-      <div className="carousel-container">
+      {selectedImage == "/src/assets/flooded-ruins.1920x1080.mp4" && (
+        <div className="typewriter">
+          Intensive English <br></br> Blog
+        </div>
+      )}
+        <div className="carousel-container">
         <div className="list-container">
           <Item 
             img={selectedImage} 
