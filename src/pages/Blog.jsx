@@ -328,7 +328,8 @@ function Blog() {
         Your browser does not support the video tag.
       
       </video>
-      {selectedImage == "/src/assets/flooded-ruins.1920x1080.mp4" && (
+      {console.log(selectedImage)}
+      {selectedImage === v2 && (
         <div className="typewriter">
           Intensive English <br></br> Blog
         </div>
