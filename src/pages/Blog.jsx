@@ -14,6 +14,7 @@ import v2 from '../assets/flooded-ruins.1920x1080.mp4';
 import background from '../assets/flooded-ruins.1920x1080.mp4'; 
 import hurricane from '../assets/huricane.png';
 import oil from '../assets/oil.png';
+import w from '../assets/w.jpg';
 import PropTypes from 'prop-types';
 
 function Item({ img, isAnimating, selectedImage }) {
@@ -177,15 +178,26 @@ function Item({ img, isAnimating, selectedImage }) {
               <div className="content-container">
                 <div className="item-info-text">
                   <p>
-                    This episode explores fascinating aspects of Colombian culture, from unique slang like guayabo, chimba, and parcero to broader cultural habits, apart we discuss the flexible approach to punctuality compared to stricter norms in places like Germany.
-                    We also dive into Colombia&apos;s diverse weather, offering tips for travelers to navigate its six regions, from Bogotá&apos;s unpredictable cold to the coast&apos;s tropical heat.
-                    The episode wraps up with reflections on cultural differences and their impact on everyday life.</p>
+                  Water is one of the most vital resources on the planet, and its usage varies significantly depending on the sector—agriculture, domestic tasks, and industry as well as the country. For instance, China allocates a staggering 69% of its water to agriculture, while only 9% is used for domestic purposes.
+                  <br></br>
+                  In contrast, Canada presents a completely different scenario. Only 9% of its water is dedicated to agriculture, while a massive 80% is used for industrial purposes. 
+                  <br></br>
+                  Meanwhile, India takes water usage for agriculture to an even greater extreme, with a significantly higher percentage than China.
+                  </p>
                 </div>
                 <div className="item-info-text">
                   <p>
-                    This episode explores fascinating aspects of Colombian culture, from unique slang like guayabo, chimba, and parcero to broader cultural habits, apart we discuss the flexible approach to punctuality compared to stricter norms in places like Germany.
-                    We also dive into Colombia&apos;s diverse weather, offering tips for travelers to navigate its six regions, from Bogotá&apos;s unpredictable cold to the coast&apos;s tropical heat.
-                    The episode wraps up with reflections on cultural differences and their impact on everyday life.</p>
+                  The armed conflict in Colombia has been a deeply sensitive issue since the 1940s, impacting generations of victims not only due to the violence 
+                  but also because of its prolonged duration, which continues to this day. Whether you are a foreigner or a Colombian, here are some key points to consider. 
+                  <br></br>
+                  First, avoid placing blame on a single party, as multiple actors have been involved in the conflict.
+                  <br></br>
+                  Second, the most powerful tools we have are truth and memory. 
+                  <br></br>
+                  Third, there is no single solution or approach to resolve such a complex issue. 
+                  <br></br>
+                  Finally, it is crucial to understand that the conflict affects everyone in Colombia, directly or indirectly. So, although this is a sensitive topic, avoiding conversations about it only worsens the problem over time.
+                  </p>
                 </div>
               </div>
             </div>
@@ -199,8 +211,8 @@ function Item({ img, isAnimating, selectedImage }) {
             <div className="content-wrapper">
               <h2 className="section-title">White Chicks</h2>
               <div className="content-container">
-                <a href={"https://galgac.my.canva.site/"} target="_blank" rel="noopener noreferrer">
-                  <img src={img5} alt={"Podcast view"} className='levitating-image' />
+                <a href={"https://drive.google.com/file/d/1n53c6AxeqQC6bc20nnWSHhzKnUHAkDMZ/preview"} target="_blank" rel="noopener noreferrer">
+                  <img src={w} alt={"Podcast view"} className='levitating-image' />
                 </a>
               </div>
             </div>
