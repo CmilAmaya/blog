@@ -10,6 +10,13 @@ import img7 from '../assets/7.png';
 import img8 from '../assets/8.png';
 import img9 from '../assets/9.png';
 import img10 from '../assets/10.png';
+import img11 from '../assets/11.jpg';
+import img12 from '../assets/12.png';
+import img13 from '../assets/13.png';
+import img14 from '../assets/14.jpg';
+import img15 from '../assets/14.png';
+import img16 from '../assets/16.jpg';
+import img17 from '../assets/17.png';
 import v2 from '../assets/flooded-ruins.1920x1080.mp4';
 import background from '../assets/flooded-ruins.1920x1080.mp4'; 
 import hurricane from '../assets/huricane.png';
@@ -280,6 +287,66 @@ function Item({ img, isAnimating, selectedImage }) {
           </div>
         </>
       )}
+       {selectedImage === img11 && (
+        <>
+          <img src={img} alt="Carousel Item" />
+          <div className={`item-info ${isVisible ? 'visible' : ''}`}>
+            <div className="content-wrapper">
+              <h2 className="section-title">Resume and Cover Letter</h2>
+              <div className="content-container">
+                <a href={"https://www.canva.com/design/DAFfR2hrvTo/C9-RUa0mRlZwe582zeXCag/view?utm_content=DAFfR2hrvTo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=haed01b515f"} target="_blank" rel="noopener noreferrer">
+                  <img src={img12} alt={"Podcast view"} className='levitating-image' />
+                </a>
+                <a href={"https://www.canva.com/design/DAGgzGxFv4s/q8ObyrYG-tBiGdcf3zxozA/view?utm_content=DAGgzGxFv4s&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc48ce0fbdc"} target="_blank" rel="noopener noreferrer">
+                  <img src={img13} alt={"Podcast view"} className='levitating-image' />
+                </a>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+      {selectedImage === img14 && (
+        <>
+          <img src={img} alt="Carousel Item" />
+          <div className={`item-info ${isVisible ? 'visible' : ''}`}>
+            <div className="content-wrapper">
+              <h2 className="section-title">Fake news</h2>
+              <div className="content-container">
+                <a href={"https://www.canva.com/design/DAGebegK9Kc/CVLwb1jJ5pHHfX6EiX10kQ/view?utm_content=DAGebegK9Kc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h21107e1d09"} target="_blank" rel="noopener noreferrer">
+                  <img src={img15} alt={"Podcast view"} className='levitating-image' />
+                </a>
+                <div className="item-info-text">
+                  <p>
+                  This episode delves into a shocking and tragic event: the devastating earthquake that struck Caldas, Colombia. We explore the harrowing details of this catastrophic 7.2-magnitude quake, which left the region in ruins and its people grappling with immense loss.
+                  Through firsthand accounts, we uncover the terrifying moments when the earth trembled, forcing families to flee as buildings collapsed around them. We discuss the chaos that ensued alarms blaring, panicked crowds, and a city engulfed in dust and despair. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
+      {selectedImage === img16 && (
+        <>
+          <img src={img} alt="Carousel Item" />
+          <div className={`item-info ${isVisible ? 'visible' : ''}`}>
+            <div className="content-wrapper">
+              <h2 className="section-title">Shark Tank</h2>
+              <div className="content-container">
+                <a href={"https://www.canva.com/design/DAGgxW903Mo/qD_anRcUBkVLkKwux97uug/view?utm_content=DAGgxW903Mo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h33a15b625b"} target="_blank" rel="noopener noreferrer">
+                  <img src={img17} alt={"Podcast view"} className='levitating-image' />
+                </a>
+                <div className="item-info-text">
+                  <p>
+                  Corruption and mismanagement of public funds remain critical challenges worldwide, eroding trust and hindering progress. Our solution tackles this issue head-on by leveraging cutting edge blockchain technology to ensure financial transactions are more secure, transparent, and tamper proof.
+                  With our system, every transaction is permanently recorded on a decentralized ledger, eliminating the risk of manipulation or unauthorized alterations. Each transaction is grouped into a block, verified by a network of computers, and added to an immutable chain ensuring accountability at every step.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
@@ -314,7 +381,7 @@ Thumbnail.propTypes = {
 function Blog() {
   const [selectedImage, setSelectedImage] = useState(background); 
   const [isAnimating, setIsAnimating] = useState(false);
-  const [visibleThumbnails, setVisibleThumbnails] = useState([img1, img2, img3, img4, img6, img7, img8, img9, img10]);
+  const [visibleThumbnails, setVisibleThumbnails] = useState([img1, img2, img3, img4, img6, img7, img8, img9, img10, img11, img14, img16]);
 
   const handleThumbnailClick = (img) => {
     setIsAnimating(true);
@@ -385,6 +452,15 @@ function Blog() {
                 break;
               case img10:
                 title = "Fly me to the moon";
+                break;
+              case img11:
+                title = "Resume and cover letter";
+                break;
+              case img14:
+                title = "Fake news";
+                break;
+              case img16:
+                title = "Shark Tank";
                 break;
               default:
                 title = "Default Title";

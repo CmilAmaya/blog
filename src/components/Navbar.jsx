@@ -5,8 +5,8 @@ function Navbar() {
     <>
       <div className="navbar-container">
         <a href="/">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="https://github.com/CmilAmaya">About</a>
+        <a href="https://wa.me/3196703046">Contact</a>
       </div>
     </>
   );
